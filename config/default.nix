@@ -7,6 +7,7 @@
     ./keys.nix
     ./sets.nix
     ./highlight.nix
+    ./common.nix
 
     ./plug/colorscheme/biscuit.nix
     ./plug/colorscheme/colorscheme.nix
