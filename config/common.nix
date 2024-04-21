@@ -1,6 +1,4 @@
 {
-  programs.nixvim = {
-    viAlias = true;
-    vimAlias = true;
-  };
+  viAlias = true;
+  vimAlias = true;
 }
