@@ -44,6 +44,7 @@
     ./plug/ui/noice.nix
     ./plug/ui/nvim-notify.nix
     ./plug/ui/telescope.nix
+    ./plug/ui/indent-blankline.nix
 
     ./plug/utils/comment.nix
     ./plug/utils/copilot.nix
@@ -57,7 +58,6 @@
     ./plug/utils/undotree.nix
     ./plug/utils/ufo.nix
     ./plug/utils/whichkey.nix
-    ./plug/utils/indent-blankline.nix
   ];
   options = {
     theme = lib.mkOption {
