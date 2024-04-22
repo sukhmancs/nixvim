@@ -57,6 +57,7 @@
     ./plug/utils/undotree.nix
     ./plug/utils/ufo.nix
     ./plug/utils/whichkey.nix
+    ./plug/utils/indent-blankline.nix
   ];
   options = {
     theme = lib.mkOption {
