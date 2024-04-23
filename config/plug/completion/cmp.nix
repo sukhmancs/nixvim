@@ -1,6 +1,5 @@
 {
   plugins = {
-    cmp-emoji = {enable = true;};
     cmp = {
       enable = true;
       settings = {
@@ -14,6 +13,7 @@
         snippet = {expand = "luasnip";};
         formatting = {fields = ["kind" "abbr" "menu"];};
         sources = [
+          {name = "git";}
           {name = "nvim_lsp";}
           {name = "emoji";}
           {
@@ -55,6 +55,8 @@
     cmp-path = {enable = true;}; # file system paths
     cmp_luasnip = {enable = true;}; # snippets
     cmp-cmdline = {enable = false;}; # autocomplete for cmdline
+    cmp-emoji = {enable = true;};
+    cmp-git = {enable = true;};
   };
   extraConfigLua = ''
           luasnip = require("luasnip")
@@ -98,7 +100,7 @@
       -- Set configuration for specific filetype.
        cmp.setup.filetype('gitcommit', {
          sources = cmp.config.sources({
-           { name = 'cmp_git' }, -- You can specify the `cmp_git` source if you were installed it.
+           { name = 'git' }, -- You can specify the `cmp_git` source if you were installed it.
          }, {
            { name = 'buffer' },
          })
