@@ -57,6 +57,7 @@
     cmp-cmdline = {enable = false;}; # autocomplete for cmdline
     cmp-emoji = {enable = true;};
     cmp-git = {enable = true;};
+    cmp-conventionalcommits = {enable = true;};
   };
   extraConfigLua = ''
           luasnip = require("luasnip")
@@ -96,6 +97,12 @@
            { name = 'buffer' }
          }
        })
+      cmp.setup.buffer {
+        sources = cmp.config.sources(
+          {{ name = 'conventionalcommits' }},
+          {{ name = 'buffer' }}
+        ),
+      }
 
       -- Set configuration for specific filetype.
        cmp.setup.filetype('gitcommit', {
