@@ -40,7 +40,8 @@
     ./plug/treesitter/treesitter-textobjects.nix
     ./plug/treesitter/treesitter.nix
 
-    ./plug/ui/alpha.nix
+    #./plug/ui/alpha.nix
+    ./plug/ui/btw.nix
     ./plug/ui/bufferline.nix
     ./plug/ui/noice.nix
     ./plug/ui/nvim-notify.nix
@@ -63,7 +64,7 @@
   options = {
     theme = lib.mkOption {
       default = "paradise";
-      type = lib.types.enum ["paradise" "mountain" "tokyonight" "everforest" "everblush" "jellybeans" "aquarium" "gruvbox"];
+      type = lib.types.enum ["paradise" "decay" "mountain" "tokyonight" "everforest" "everblush" "jellybeans" "aquarium" "gruvbox"];
     };
   };
   config = {
