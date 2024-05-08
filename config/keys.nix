@@ -63,6 +63,41 @@
       action = "+test";
     }
 
+    {
+      key = "<leader>e";
+      action = "<CMD>Neotree toggle<CR>";
+      options.desc = "Toggle NeoTree";
+    }
+
+    # Comment/Uncomment
+    {
+      mode = "n";
+      key = "<C-/>";
+      action = "<Plug>(comment_toggle_linewise_current)";
+      options.desc = "(Un)comment in Normal Mode";
+    }
+
+    {
+      mode = "v";
+      key = "<C-/>";
+      action = "<Plug>(comment_toggle_linewise_visual)";
+      options.desc = "(Un)comment in Visual Mode";
+    }
+
+    {
+      mode = "n";
+      key = "<C-S-/>";
+      action = "<Plug>(comment_toggle_blockwise_current)";
+      options.desc = "(Un)comment in Normal Mode";
+    }
+
+    {
+      mode = "v";
+      key = "<C-S-/>";
+      action = "<Plug>(comment_toggle_blockwise_visual)";
+      options.desc = "(Un)comment in Visual Mode";
+    }
+
     # Tabs
     {
       mode = "n";
