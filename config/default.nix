@@ -62,6 +62,7 @@
     ./plug/utils/ufo.nix
     ./plug/utils/whichkey.nix
     ./plug/utils/neo-tree.nix
+    ./plug/utils/backseat.nix
   ];
   options = {
     theme = lib.mkOption {
